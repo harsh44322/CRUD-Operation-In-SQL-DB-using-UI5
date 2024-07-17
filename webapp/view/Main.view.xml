@@ -1,0 +1,9 @@
+<mvc:View controllerName="postgresql.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Text id="idForTxt" text="Hello World"/>
+        </content>
+    </Page>
+</mvc:View>
