@@ -19,10 +19,11 @@ sap.ui.define([
             loadData: function() {
                 var that = this;
                 
-                $.ajax({
+                var aData = $.ajax({
                     url: "http://localhost:3000/data",
-                    method: "GET",
-                    success: function(data) {
+                    type: "GET",
+                    dataType: "json",
+                    success: function(data, textStatus, jqXHR) {
                       console.log("Data received:", data);
                       var oModel = new sap.ui.model.json.JSONModel();
                       oModel.setData(data);
