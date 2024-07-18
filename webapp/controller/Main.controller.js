@@ -10,27 +10,14 @@ sap.ui.define([
 
         return Controller.extend("postgresql.controller.Main", {
             onInit: function () {
-                // var oModel = new JSONModel();
-
-                // this.getView().setModel(oModel);
 
                 this.loadData();
+                
             },
             loadData: function() {
                 var oModel = new JSONModel();
-      this.getView().setModel(oModel);
-
-      // Fetch data from the server
-    //   $.ajax({
-    //     url: 'http://localhost:3000/data',
-    //     method: 'GET',
-    //     success: function (data) {
-    //       oModel.setData({ items: data });
-    //     },
-    //     error: function (error) {
-    //       console.error("Error fetching data", error);
-    //     }
-    //   });
+                this.getView().setModel(oModel);
+      
                 var aData = $.ajax({
                     url: "http://localhost:3000/data",
                     method: "GET",
