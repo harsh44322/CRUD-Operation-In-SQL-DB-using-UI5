@@ -21,30 +21,30 @@ sap.ui.define([
       this.getView().setModel(oModel);
 
       // Fetch data from the server
-      $.ajax({
-        url: 'http://localhost:3000/data',
-        method: 'GET',
-        success: function (data) {
-          oModel.setData({ items: data });
-        },
-        error: function (error) {
-          console.error("Error fetching data", error);
-        }
-      });
-                // var aData = $.ajax({
-                //     url: "http://localhost:3000/data",
-                //     type: "GET",
-                //     success: function(result) {
-                //       console.log("Data received:", result);
-                //       var oModel = new sap.ui.model.json.JSONModel();
-                //       oModel.setData(result);
-                //       this.getView().setModel(oModel);
-                //     }.bind(this),
-                //     error: function(xhr, status, error) {
-                //       console.error("Failed to fetch data:", error);
-                //       alert("Failed to fetch data from server.");
-                //     }
-                //   });
+    //   $.ajax({
+    //     url: 'http://localhost:3000/data',
+    //     method: 'GET',
+    //     success: function (data) {
+    //       oModel.setData({ items: data });
+    //     },
+    //     error: function (error) {
+    //       console.error("Error fetching data", error);
+    //     }
+    //   });
+                var aData = $.ajax({
+                    url: "http://localhost:3000/data",
+                    method: "GET",
+                    success: function(result) {
+                      console.log("Data received:", result);
+                      var oModel = new sap.ui.model.json.JSONModel();
+                      oModel.setData(result);
+                      this.getView().setModel(oModel);
+                    }.bind(this),
+                    error: function(xhr, status, error) {
+                      console.error("Failed to fetch data:", error);
+                      alert("Failed to fetch data from server.");
+                    }
+                  });
               }
         });
     });
