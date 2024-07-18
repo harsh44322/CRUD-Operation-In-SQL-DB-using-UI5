@@ -18,17 +18,19 @@ sap.ui.define([
             },
             loadData: function() {
                 var oModel = new JSONModel();
-                this.getView().setModel(oModel);
+      this.getView().setModel(oModel);
 
-                // Fetch data from the backend API
-                fetch('http://localhost:3000/data')
-                    .then(response => response.json())
-                    .then(data => {
-                    oModel.setData(data);
-                    })
-                    .catch(err => {
-                    console.error('Error fetching data:', err);
-                    });
+      // Fetch data from the server
+      $.ajax({
+        url: 'http://localhost:3000/data',
+        method: 'GET',
+        success: function (data) {
+          oModel.setData({ items: data });
+        },
+        error: function (error) {
+          console.error("Error fetching data", error);
+        }
+      });
                 // var aData = $.ajax({
                 //     url: "http://localhost:3000/data",
                 //     type: "GET",
