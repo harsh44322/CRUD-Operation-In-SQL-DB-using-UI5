@@ -9,10 +9,9 @@
     "sapui5"
   ],
   "main": "webapp/index.html",
-  "dependencies": {},
   "devDependencies": {
-    "@ui5/cli": "^2.14.1",
-    "@sap/ux-ui5-tooling": "1"
+    "@sap/ux-ui5-tooling": "1",
+    "@ui5/cli": "^3.11.0"
   },
   "scripts": {
     "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#postgresql-display\"",
@@ -30,5 +29,20 @@
       "@sap/ux-ui5-tooling"
     ]
   },
-  "sapuxLayer": "CUSTOMER_BASE"
+  "sapuxLayer": "CUSTOMER_BASE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh44322/CRUD-Operation-In-SQL-DB-using-UI5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harsh44322/CRUD-Operation-In-SQL-DB-using-UI5/issues"
+  },
+  "homepage": "https://github.com/harsh44322/CRUD-Operation-In-SQL-DB-using-UI5#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
 }
