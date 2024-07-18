@@ -12,7 +12,7 @@ sap.ui.define([
             onInit: function () {
 
                 this.loadData();
-                
+
             },
             loadData: function() {
                 var oModel = new JSONModel();
@@ -24,7 +24,8 @@ sap.ui.define([
                     success: function(result) {
                       console.log("Data received:", result);
                       var oModel = new sap.ui.model.json.JSONModel();
-                      oModel.setData(result);
+                      oModel.setProperty("/data",result);
+                      oModel.setData({data: result});
                       this.getView().setModel(oModel);
                     }.bind(this),
                     error: function(xhr, status, error) {
