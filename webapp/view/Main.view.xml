@@ -1,16 +1,17 @@
 <mvc:View controllerName="postgresql.controller.Main"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
-    xmlns:tab="sap.ui.core.table">
+    xmlns:tab="sap.ui.table"
+    xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
         <content>
-            <tab:Table>
+            <tab:Table rows="{/data}">
                 <tab:columns>
                     <tab:Column>
                         <Label text="Id"/>
-                        <tab:Tempelate>
-                            <Text text=""/>
-                        </tab:Tempelate>
+                        <tab:template>
+                            <Text text="{id}"/>
+                        </tab:template>
                     </tab:Column>
                 </tab:columns>
             </tab:Table>

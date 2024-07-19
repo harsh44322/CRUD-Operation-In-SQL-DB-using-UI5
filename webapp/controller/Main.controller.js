@@ -24,7 +24,7 @@ sap.ui.define([
                     success: function(result) {
                       console.log("Data received:", result);
                       var oModel = new sap.ui.model.json.JSONModel();
-                      oModel.setProperty("/data",result);
+                    //   oModel.setProperty("/data",result);
                       oModel.setData({data: result});
                       this.getView().setModel(oModel);
                     }.bind(this),
