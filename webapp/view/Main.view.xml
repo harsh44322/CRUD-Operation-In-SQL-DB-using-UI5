@@ -13,6 +13,36 @@
                             <Text text="{id}"/>
                         </tab:template>
                     </tab:Column>
+                    <tab:Column>
+                        <Label text="First Name"/>
+                        <tab:template>
+                            <Text text="{first_name}"/>
+                        </tab:template>
+                    </tab:Column>
+                    <tab:Column>
+                        <Label text="Last Name"/>
+                        <tab:template>
+                            <Text text="{last_name}"/>
+                        </tab:template>
+                    </tab:Column>
+                    <tab:Column>
+                        <Label text="Email"/>
+                        <tab:template>
+                            <Text text="{email}"/>
+                        </tab:template>
+                    </tab:Column>
+                    <tab:Column>
+                        <Label text="Hiring Date"/>
+                        <tab:template>
+                            <Text text="{hire_date}"/>
+                        </tab:template>
+                    </tab:Column>
+                    <tab:Column>
+                        <Label text="Salary"/>
+                        <tab:template>
+                            <Text text="{salary}"/>
+                        </tab:template>
+                    </tab:Column>
                 </tab:columns>
             </tab:Table>
         </content>
