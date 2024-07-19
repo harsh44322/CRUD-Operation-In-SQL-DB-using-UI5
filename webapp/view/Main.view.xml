@@ -10,7 +10,7 @@
                     <tab:Column>
                         <Label text="Id"/>
                         <tab:template>
-                            <Text text="{id}"/> 
+                            <Text text="{id}"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
