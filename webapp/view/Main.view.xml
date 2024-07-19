@@ -12,7 +12,7 @@
                         <tab:template>
                             <Text text="{id}"/>
                         </tab:template>
-                    </tab:Column> 
+                    </tab:Column>
                     <tab:Column>
                         <Label text="First Name"/>
                         <tab:template>
