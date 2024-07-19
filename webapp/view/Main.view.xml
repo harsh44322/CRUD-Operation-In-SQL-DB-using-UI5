@@ -4,7 +4,16 @@
     xmlns:tab="sap.ui.core.table">
     <Page id="page" title="{i18n>title}">
         <content>
-            
+            <tab:Table>
+                <tab:columns>
+                    <tab:Column>
+                        <Label text="Id"/>
+                        <tab:Tempelate>
+                            <Text text=""/>
+                        </tab:Tempelate>
+                    </tab:Column>
+                </tab:columns>
+            </tab:Table>
         </content>
     </Page>
 </mvc:View>
