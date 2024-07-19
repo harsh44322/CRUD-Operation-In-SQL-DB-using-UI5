@@ -5,7 +5,7 @@
     xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
         <content>
-            <tab:Table rows="{/data}">
+            <tab:Table rows="{/data}"> 
                 <tab:columns>
                     <tab:Column>
                         <Label text="Id"/>
