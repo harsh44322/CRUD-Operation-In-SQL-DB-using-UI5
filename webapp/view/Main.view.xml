@@ -33,7 +33,7 @@
                     </tab:Column>
                     <tab:Column>
                         <Label text="Hiring Date"/>
-                        <tab:template> 
+                        <tab:template>
                             <Text text="{hire_date}"/>
                         </tab:template>
                     </tab:Column>
