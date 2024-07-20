@@ -19,7 +19,7 @@
                             <Text text="{first_name}"/>
                         </tab:template>
                     </tab:Column>
-                    <tab:Column> 
+                    <tab:Column>
                         <Label text="Last Name"/>
                         <tab:template>
                             <Text text="{last_name}"/>
