@@ -6,6 +6,14 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <tab:Table rows="{/data}">
+                <tab:extension>
+                    <OverflowToolbar >
+                        <Title text="Employee Table"></Title>
+                        <ToolbarSpacer ></ToolbarSpacer>
+                        <Button ></Button>
+                        <Button ></Button>
+                    </OverflowToolbar>
+                </tab:extension>
                 <tab:columns>
                     <tab:Column>
                         <Label text="Id"/>
@@ -19,7 +27,7 @@
                             <Text text="{first_name}"/>
                         </tab:template>
                     </tab:Column>
-                    <tab:Column>
+                    <tab:Column> 
                         <Label text="Last Name"/>
                         <tab:template>
                             <Text text="{last_name}"/>
@@ -45,6 +53,7 @@
                     </tab:Column>
                 </tab:columns>
             </tab:Table>
+            
         </content>
     </Page>
 </mvc:View>
