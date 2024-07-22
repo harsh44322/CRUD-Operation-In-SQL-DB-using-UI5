@@ -3,8 +3,6 @@
     xmlns="sap.m"
     xmlns:tab="sap.ui.table"
     xmlns:core="sap.ui.core">
-    <Page id="page" title="{i18n>title}">
-        <content>
             <tab:Table rows="{/data}">
                 <tab:extension>
                     <OverflowToolbar >
@@ -53,7 +51,4 @@
                     </tab:Column>
                 </tab:columns>
             </tab:Table>
-            
-        </content>
-    </Page>
 </mvc:View>
