@@ -10,8 +10,8 @@
                     <OverflowToolbar >
                         <Title text="Employee Table"></Title>
                         <ToolbarSpacer ></ToolbarSpacer>
-                        <Button ></Button>
-                        <Button ></Button>
+                        <Button icon="sap-icon://save" press="onSave"></Button>
+                        <Button icon="sap-icon://edit" press="onEdit"></Button>
                     </OverflowToolbar>
                 </tab:extension>
                 <tab:columns>
