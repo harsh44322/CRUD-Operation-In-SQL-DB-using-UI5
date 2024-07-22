@@ -9,7 +9,7 @@
                         <Title text="Employee Table"></Title>
                         <ToolbarSpacer ></ToolbarSpacer>
                         <Button icon="sap-icon://save" press="onSave"></Button>
-                        <Button icon="sap-icon://edit" press="onEdit"></Button>
+                        <Button icon="sap-icon://create" press="onEdit"></Button>
                     </OverflowToolbar>
                 </tab:extension>
                 <tab:columns>
