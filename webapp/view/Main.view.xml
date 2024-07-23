@@ -16,37 +16,37 @@
                     <tab:Column>
                         <Label text="Id"/>
                         <tab:template>
-                            <Text text="{id}"/>
+                            <Input value="{id}" change="onInputChange"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="First Name"/>
                         <tab:template>
-                            <Text text="{first_name}"/>
+                            <Input value="{first_name}" change="onInputChange"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column> 
                         <Label text="Last Name"/>
                         <tab:template>
-                            <Text text="{last_name}"/>
+                            <Input value="{last_name}" change="onInputChange"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="Email"/>
                         <tab:template>
-                            <Text text="{email}"/>
+                            <Input value="{email}" change="onInputChange"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="Hiring Date"/>
                         <tab:template>
-                            <Text text="{hire_date}"/>
+                            <Input value="{hire_date}" change="onInputChange"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="Salary"/>
                         <tab:template>
-                            <Text text="{salary}"/>
+                            <Input value="{salary}" change="onInputChange"/>
                         </tab:template>
                     </tab:Column>
                 </tab:columns>
