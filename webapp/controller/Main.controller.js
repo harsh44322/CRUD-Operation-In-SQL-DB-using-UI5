@@ -51,7 +51,6 @@ sap.ui.define([
                     hire_date: "",
                     salary: ""
                 });
-    
                 // Update the model
                 oModel.setProperty("/rows", aData);
             },
