@@ -16,37 +16,37 @@
                     <tab:Column>
                         <Label text="Id"/>
                         <tab:template>
-                            <Input value="{id}" change="onInputChange"/>
+                            <Input value="{id}" change="onInputChange" editable="false"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="First Name"/>
                         <tab:template>
-                            <Input value="{first_name}" change="onInputChange"/>
+                            <Input value="{first_name}" change="onInputChange" editable="false"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column> 
                         <Label text="Last Name"/>
                         <tab:template>
-                            <Input value="{last_name}" change="onInputChange"/>
+                            <Input value="{last_name}" change="onInputChange" editable="false"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="Email"/>
                         <tab:template>
-                            <Input value="{email}" change="onInputChange"/>
+                            <Input value="{email}" change="onInputChange" editable="false"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="Hiring Date"/>
                         <tab:template>
-                            <Input value="{hire_date}" change="onInputChange"/>
+                            <Input value="{hire_date}" change="onInputChange" editable="false"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
                         <Label text="Salary"/>
                         <tab:template>
-                            <Input value="{salary}" change="onInputChange"/>
+                            <Input value="{salary}" change="onInputChange" editable="false"/>
                         </tab:template>
                     </tab:Column>
                 </tab:columns>
