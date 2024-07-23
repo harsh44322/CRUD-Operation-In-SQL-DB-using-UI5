@@ -8,8 +8,10 @@
                     <OverflowToolbar >
                         <Title text="Employee Table"></Title>
                         <ToolbarSpacer ></ToolbarSpacer>
-                        <Button icon="sap-icon://save" press="onSave"></Button>
+                        <Button type="Accept" icon="sap-icon://save" press="onSave"></Button>
                         <Button icon="sap-icon://create" press="onCreate"></Button>
+                        <Button icon="sap-icon://edit" press="onEdit"></Button>
+                        <Button type="Reject" icon="sap-icon://delete" press="onDelete"></Button>
                     </OverflowToolbar>
                 </tab:extension>
                 <tab:columns>
