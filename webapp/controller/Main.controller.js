@@ -44,7 +44,7 @@ sap.ui.define([
     
                 // Add a new row
                 aData.unshift({
-                    id: this._generateId(),
+                    id: "",
                     first_name: "",
                     last_name: "",
                     email: "",
@@ -69,18 +69,13 @@ sap.ui.define([
                     MessageToast.show("No edited row to save");
                     return;
                 }
+                oEditedRow.id = Math.floor(parseInt(oEditedRow.id));
     
                 $.ajax({
                     url: "http://localhost:3000/save",
                     method: "POST",
-                    data: {
-                        first_name: oEditedRow.first_name,
-                        last_name: oEditedRow.last_name,
-                        email: oEditedRow.email,
-                        hire_date: oEditedRow.hire_date,
-                        salary: oEditedRow.salary
-                    },
-                    // data: JSON.stringify(oEditedRow),
+                    contentType: "application/json",
+                    data: JSON.stringify(oEditedRow),
                     success: function (response) {
                         MessageToast.show("Row saved successfully");
                     },
@@ -88,9 +83,6 @@ sap.ui.define([
                         MessageToast.show("Error saving row");
                     }
                 });
-            },
-            _generateId: function () {
-                return Math.floor(parseInt(Math.random() * 1000000));
             }
         });
     });
