@@ -40,7 +40,6 @@ sap.ui.define([
                 var oModel = this.getView().getModel();
                 var aData = oModel.getProperty("/data");
     
-                // Add a new row
                 aData.unshift({
                     id: "",
                     first_name: "",
