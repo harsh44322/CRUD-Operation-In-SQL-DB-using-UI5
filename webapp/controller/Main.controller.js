@@ -36,7 +36,6 @@ sap.ui.define([
                 });
             },
             onCreate: function () {
-                // Get the model
                 var oModel = this.getView().getModel();
                 var aData = oModel.getProperty("/data");
     
