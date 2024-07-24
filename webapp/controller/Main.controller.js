@@ -22,7 +22,7 @@ sap.ui.define([
             loadData: function() {
                 var oModel = new JSONModel();
                 this.getView().setModel(oModel);
-                var aData = $.ajax({
+                $.ajax({
                     url: "http://localhost:3000/data",
                     method: "GET",
                     success: function(result, lastId) {
