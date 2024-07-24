@@ -28,7 +28,6 @@ sap.ui.define([
                     success: function(result, lastId) {
                       oModel.setData({data: result});
                       this.getView().setModel(oModel);
-                    //   oModel.setBusy(false);
                     }.bind(this),
                     error: function(xhr, status, error) {
                       console.error("Failed to fetch data:", error);
