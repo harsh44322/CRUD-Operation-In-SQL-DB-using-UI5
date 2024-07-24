@@ -26,7 +26,7 @@ sap.ui.define([
                 var aData = $.ajax({
                     url: "http://localhost:3000/data",
                     method: "GET",
-                    success: function(result) {
+                    success: function(result, lastId) {
                       oModel.setData({data: result});
                       this.getView().setModel(oModel);
                     //   oModel.setBusy(false);
