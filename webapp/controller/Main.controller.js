@@ -22,7 +22,6 @@ sap.ui.define([
             loadData: function() {
                 var oModel = new JSONModel();
                 this.getView().setModel(oModel);
-                // oModel.setBusy(true);
                 var aData = $.ajax({
                     url: "http://localhost:3000/data",
                     method: "GET",
