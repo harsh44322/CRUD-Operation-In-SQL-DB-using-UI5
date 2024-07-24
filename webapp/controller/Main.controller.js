@@ -49,7 +49,8 @@ sap.ui.define([
                     last_name: "",
                     email: "",
                     hire_date: "",
-                    salary: ""
+                    salary: "",
+                    isNew: true
                 });
                 // Update the model
                 oModel.setProperty("/rows", aData);
