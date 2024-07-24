@@ -50,7 +50,6 @@ sap.ui.define([
                     salary: "",
                     isNew: true
                 });
-                // Update the model
                 oModel.setProperty("/rows", aData);
             },
             onInputChange: function (oEvent) {
