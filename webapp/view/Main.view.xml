@@ -18,7 +18,7 @@
                     <tab:Column>
                         <Label text="Id"/>
                         <tab:template>
-                            <Input type="Text" value="{id}" change="onInputChange" editable="{= ${isNew} ? true : false}"/>
+                            <Input value="{id}" change="onInputChange" editable="false"/>
                         </tab:template>
                     </tab:Column>
                     <tab:Column>
