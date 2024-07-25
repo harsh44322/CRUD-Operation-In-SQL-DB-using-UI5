@@ -89,6 +89,9 @@ sap.ui.define([
                         MessageToast.show("Error saving row");
                     }
                 });
+            },
+            onDelete: function(oEvent){
+                
             }
         });
     });
