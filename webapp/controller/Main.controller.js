@@ -1,12 +1,12 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
-     "sap/m/MessageToast"
+    "sap/m/MessageToast"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, JSONModel) {
+    function (Controller, JSONModel, MessageToast) {
         "use strict";
 
         return Controller.extend("postgresql.controller.Main", {
@@ -25,7 +25,7 @@ sap.ui.define([
                 $.ajax({
                     url: "http://localhost:3000/data",
                     method: "GET",
-                    success: function(result, lastId) {
+                    success: function(result) {
                       oModel.setData({data: result});
                       this.getView().setModel(oModel);
                     }.bind(this),
@@ -38,17 +38,28 @@ sap.ui.define([
             onCreate: function () {
                 var oModel = this.getView().getModel();
                 var aData = oModel.getProperty("/data");
-    
-                aData.unshift({
-                    id: "",
-                    first_name: "",
-                    last_name: "",
-                    email: "",
-                    hire_date: "",
-                    salary: "",
-                    isNew: true
+
+                $.ajax({
+                    url: "http://localhost:3000/data/id",
+                    method: "GET",
+                    success: function(lastId){
+                        let newId = lastId[0].id + 1;
+                        aData.unshift({
+                            id: newId,
+                            first_name: "",
+                            last_name: "",
+                            email: "",
+                            hire_date: "",
+                            salary: "",
+                            isNew: true
+                        });
+                        oModel.setProperty("/rows", aData);
+                    },
+                    error: function(xhr, status, error){
+                        console.error(error);
+                    }
                 });
-                oModel.setProperty("/rows", aData);
+    
             },
             onInputChange: function (oEvent) {
                 var oModel = this.getView().getModel();
