@@ -94,11 +94,14 @@ sap.ui.define([
                 });
                 this.loadData();
             },
+            onRowChange: function(oEvent){
+                
+            },
             onDelete: function(oEvent){
                 let oView = this.byId("idForTable");
                 let oSelectedIndex = oView.getSelectedIndices();
                 let oModel = oView.getBinding().getModel(); 
-                    
+
             }
         });
     });
