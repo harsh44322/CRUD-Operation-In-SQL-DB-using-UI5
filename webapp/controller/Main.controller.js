@@ -85,12 +85,14 @@ sap.ui.define([
                     data: JSON.stringify(oEditedRow),
                     success: function (response) {
                         MessageToast.show("Row saved successfully");
-                        this.loadData();
+                        
                     },
                     error: function (error) {
                         MessageToast.show("Error saving row");
                     }
+                    
                 });
+                this.loadData();
             },
             onDelete: function(oEvent){
 
