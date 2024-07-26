@@ -98,9 +98,9 @@ sap.ui.define([
                 
             },
             onDelete: function(oEvent){
-                let oView = this.byId("idForTable");
-                let oSelectedIndex = oView.getSelectedIndices();
-                let oModel = oView.getBinding().getModel(); 
+                // let oView = this.byId("idForTable");
+                // let oSelectedIndex = oView.getSelectedIndices();
+                // let oModel = oView.getBinding().getModel(); 
 
             }
         });
