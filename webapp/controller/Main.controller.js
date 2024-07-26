@@ -95,7 +95,7 @@ sap.ui.define([
                 this.loadData();
             },
             onRowChange: function(oEvent){
-                 
+                
             },
             onDelete: function(oEvent){
                 let oView = this.byId("idForTable");
