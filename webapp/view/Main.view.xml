@@ -3,7 +3,7 @@
     xmlns="sap.m"
     xmlns:tab="sap.ui.table"
     xmlns:core="sap.ui.core">
-            <tab:Table rows="{/data}">
+            <tab:Table rows="{/data}" id="idForTable" selectionMode="Single">
                 <tab:extension>
                     <OverflowToolbar >
                         <Title text="Employee Table"></Title>
