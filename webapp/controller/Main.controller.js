@@ -54,7 +54,7 @@ sap.ui.define([
                             isNew: true
                         });
                         oModel.setProperty("/rows", aData);
-                        this.loadData();
+                        
                     },
                     error: function(xhr, status, error){
                         console.error(error);
