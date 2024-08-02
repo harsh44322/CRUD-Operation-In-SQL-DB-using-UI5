@@ -101,7 +101,7 @@ sap.ui.define([
                 // let oView = this.byId("idForTable");
                 // let oSelectedIndex = oView.getSelectedIndices();
                 // let oModel = oView.getBinding().getModel(); 
-
+                // 
             }
         });
     });
